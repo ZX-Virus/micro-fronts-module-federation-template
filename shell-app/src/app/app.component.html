@@ -1,0 +1,19 @@
+<a routerLink="">Home</a><br>
+<a routerLink="/angular_content">Angular content</a><br>
+<a routerLink="/react_content">React content</a><br>
+<a routerLink="/vue_content">Vue content</a><br>
+<a routerLink="/native_js_content">Native JavaScript content</a><br>
+
+@if (store) {
+  <h1>Counter: {{ store.count }}</h1>
+  <button (click)="store.decrement()">Dec</button>
+  <button (click)="store.increment()">Inc</button>
+}
+
+<div #component3></div>
+<div #component2></div>
+<div #component1></div>
+
+<div class="router-outlet">
+  <router-outlet></router-outlet>
+</div>
